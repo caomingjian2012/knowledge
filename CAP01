@@ -8,16 +8,15 @@
 折中的思想。这个折中思想成为了著名的CAP理论，而且从发布到现在一直被广泛讨论。本文中，我们回顾CAP理论，并把它置于更广泛的分布式计算理论
 范围内，然后我们来讨论CPA理论的实际影响和  explore some
 general techniques for coping with the inherent trade-offs that it implies.
-1 Introduction
-Almost twelve years ago, in 2000, Eric Brewer introduced the idea that there is a fundamental trade-off between
-consistency, availability, and partition tolerance. This trade-off, which has become known as the CAP Theorem, has
-been widely discussed ever since.
-Theoretical context. Our first goal in this paper is to situate the CAP Theorem in the broader context of distributed
-computing theory. Some of the interest in the CAP Theorem, perhaps, derives from the fact that it illustrates a more
-general trade-off that appears everywhere (e.g., [4,7,15,17,23]) in the study of distributed computing: the impossibility
-of guaranteeing both safety and liveness in an unreliable distributed system:
-Safety: Informally, an algorithm is safe if nothing bad ever happens. A quiet, uneventful room is perfectly safe.
-Consistency (as defined in the CAP Theorem) is a classic safety property: every response sent to a client is correct.
+1 介绍
+大约在12年前--2000，Eric Brewer提出一个关于一致性（consistency），可用性（availability），分割容错性（partition tolerance）三者之间
+折中的思想。这个折中思想成为了著名的CAP理论，而且从发布到现在一直被广泛讨论。
+理论背景，我们的本文的第一目标是把CAP理论放置于更广泛的分布式计算理论中。或许CAP理论一些东西派生自分布式计算领域中一个更广泛的折中思想
+--在不可靠的分布式系统中，不可能同时保证安全性和存活性
+安全性：非正式的，如果没有坏事发生，算法就是安全的。比如一个安静的，平静的房间是完全安全的。
+一致性（CAP理论中定义的）：是一个典型的安全属性，每个响应发给客户端都是正确的
+
+
 Liveness: By contrast, an algorithm is live if eventually something good happens. In a busy pub, there may be some
 good things happening, and there may be some bad things happening—but overall, it is quite lively. Availability is a
 classic liveness property: eventually, every request receives a response.
