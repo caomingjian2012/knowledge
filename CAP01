@@ -1,13 +1,12 @@
-Perspectives on the CAP Theorem
-Seth Gilbert
-National University of Singapore
-Nancy A. Lynch
-Massachusetts Institute of Technology
-Abstract
-Almost twelve years ago, in 2000, Eric Brewer introduced the idea that there is a fundamental trade-off between
-consistency, availability, and partition tolerance. This trade-off, which has become known as the CAP Theorem, has
-been widely discussed ever since. In this paper, we review the CAP Theorem and situate it within the broader context
-of distributed computing theory. We then discuss the practical implications of the CAP Theorem, and explore some
+原文：https://groups.csail.mit.edu/tds/papers/Gilbert/Brewer2.pdf
+
+透视CAP理论
+作者：Seth Gilbert  (新加坡国立大学) /  Nancy A. Lynch (MIT)
+
+前言
+大约在12年前--2000，Eric Brewer提出一个关于一致性（consistency），可用性（availability），分割容错性（partition tolerance）三者之间
+折中的思想。这个折中思想成为了著名的CAP理论，而且从发布到现在一直被广泛讨论。本文中，我们回顾CAP理论，并把它置于更广泛的分布式计算理论
+范围内，然后我们来讨论CPA理论的实际影响和  explore some
 general techniques for coping with the inherent trade-offs that it implies.
 1 Introduction
 Almost twelve years ago, in 2000, Eric Brewer introduced the idea that there is a fundamental trade-off between
