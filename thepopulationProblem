@@ -1,0 +1,18 @@
+人口问题或兔子问题生育问题
+一对兔子，在出生后第X个月开始可以生育在第X1个月开始绝育，每Y个月可以生一胎，出生第Z个月死亡。
+
+数据结构：arraylist。
+[a0,a1,a2,a3,....] a0表示新生数量，a1表示一月龄数量，an表示n月龄数量，a10000 表示10000月龄数量（当然它们已经都死了）
+
+每个周期（月）
+newlist = newburn+oldlist;
+   // List<Long> newlist =new ArrayList<Long>();
+	//	newlist.add(newburn);
+	//	newlist.addAll(list);
+	
+newburn ：index下标在[x,x1]区间可生育（Y个月生一胎）的兔子数量 
+    //  if(index>x && index<x1 && (index-x)%Y==0){
+    //    newburn += a[index];
+    //  }
+
+	
